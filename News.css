@@ -1,0 +1,300 @@
+body {
+    overflow-x: hidden;
+    background-color: rgb(158, 157, 157) !important;
+}
+
+:root {
+    --border-color: rgb(67, 139, 115);  
+}
+
+.head {
+    margin-left: 60px;
+    color: rgb(67, 139, 115);
+}
+
+.nav-link {
+    font-size: 15px;
+}
+
+.nav-link:hover {
+    color: rgb(67, 139, 115) !important;
+}
+
+.nav-link:hover{
+    color: aquamarine;
+    cursor: pointer;
+}
+
+.Nav {
+    font-size: 12px !important;
+    border-right: 2px solid rgb(67, 139, 115);
+    margin-right: 6px;
+}
+
+.after-head {
+    margin-left: 2.5em;
+    margin-top: .6em;
+    border-left: 4px solid var(--border-color);
+    padding-left: 1em;
+}
+
+.input {
+    position: absolute;
+    right: 3em;
+    top: 13.5em;
+}
+
+.input input {    
+    border: 2px solid gray;
+    border-radius: 5px;
+    height: 40px;
+    width: 230px;
+}
+
+.input button {
+    height: 37px;
+    width: 80px;
+    border-radius: 4px;
+    font-weight: bold;
+    border: 2px solid black;
+    background: #fff;
+}
+
+.input button:hover {
+    background-color: black;
+    color: white;
+}
+
+.small {
+    text-align: center;
+    background-color: var(--border-color);
+    width: 100px;
+    margin-top: 10px;
+    position: relative;
+    left: 27rem;
+    color: white;
+    border-radius: 5px;
+}
+
+.main-section {
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+.main-section > .News-pics {
+    width: 70vw;
+    text-align: center;
+    padding: 0 10px;
+    
+}
+
+.main-section > .sidebar {
+    width: 30vw;
+    margin-left: 30px;
+}
+
+.main-section > div {
+    margin-top: 50px;
+}
+
+.comments {
+    margin-top:  30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.comments > p {
+    padding: 0 20px;
+}
+
+.image {
+    background-image: url('./login-background.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.sidebar > ul {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.sidebar > ul > li {
+    margin: 12px 0;
+    font-size: 15px;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    padding-left: 40px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.contacts {
+    border: 1px solid gray;
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    background-color: rgb(204, 206, 207);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacts > h2 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.contacts > p {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+}
+
+#contact > h5 {
+    margin-top: 30px;
+}
+.contacts > ul {
+    margin-top: 20px;
+}
+
+.contacts > ul > li {
+    font-size: 17px;
+    margin: 8px 0;
+}
+
+.para-term {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.privacy {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.privacy > h3 {
+    margin: 20px 0;
+}
+
+.privacy > .table-content {
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: lightgray;
+}
+.privacy > h2 {
+    margin-top: 23px;
+}
+
+.con {
+    flex-direction: column;
+    align-items: center;
+}
+
+@media all and (max-width: 375px) {
+
+    body {
+        width: 100vw;
+    }
+
+    .after-head {
+        position: relative;
+        top: 3em;
+        right: 2.5em;
+    }
+
+    .navbar {
+        width: 130vw;
+    }
+
+    .input {
+      display: inline-block;
+    }
+
+    .small {
+        display: none;
+    }
+
+    .News-pics > h3 {
+        font-size: 18px;
+        margin-top: 25px;
+        margin-bottom: 12px;
+    }
+    
+    .sidebar > h3 {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    .sidebar > ul > li {
+        font-size: 14px;
+        width: 180px;
+        position: relative;
+        right: 3em;
+    }
+
+    .comments > p {
+        margin: 0 -8px;
+        font-weight: bold;
+    }
+
+    .comments {
+        width: 100vw;
+        position: relative;
+        right: 4.4em;
+    }
+
+    .comments > p{
+        font-size: 13px;
+    }
+
+    .News-pics {
+        padding-bottom: 1em;
+    }
+    
+    #News {
+        position: relative;
+        bottom: 44em;
+    }
+
+    .footer {
+        width: 700px;
+        border: 1px solid red;
+        margin-bottom: 0px;
+        font-size: 13px;
+        text-align: left;
+    }
+}
+
+
+
+
+
+
+
+
+
